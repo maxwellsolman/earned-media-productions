@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import LogoMarquee from './components/LogoMarquee'
 import Services from './components/Services'
+import Capabilities from './components/Capabilities'
 import Process from './components/Process'
 import Stats from './components/Stats'
 import Contact from './components/Contact'
@@ -41,6 +42,7 @@ export default function App() {
         <Hero />
         <LogoMarquee />
         <Services />
+        <Capabilities />
         <Process />
         <Stats />
         <Contact />

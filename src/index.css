@@ -42,11 +42,13 @@ body {
   color: #fff;
 }
 
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #05070e; }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#2ec5ff, #c12eff);
-  border-radius: 99px;
+@media (pointer: fine) {
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #05070e; }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#2ec5ff, #c12eff);
+    border-radius: 99px;
+  }
 }
 
 @layer utilities {
