@@ -108,8 +108,14 @@ body {
 }
 .animate-floaty { animation: floaty 7s ease-in-out infinite; }
 
+@keyframes eq {
+  from { transform: scaleY(0.35); }
+  to { transform: scaleY(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee, .animate-floaty { animation: none; }
+  .grad-bg[style*="eq"] { animation: none !important; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }

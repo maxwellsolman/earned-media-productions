@@ -14,6 +14,7 @@ const services = [
       'Content ops and performance tracking',
     ],
     image: undefined,
+    waveform: true,
   },
   {
     n: '02',
@@ -27,6 +28,7 @@ const services = [
       'One team, start to finish',
     ],
     image: creationImg,
+    waveform: false,
   },
   {
     n: '03',
@@ -40,6 +42,7 @@ const services = [
       'Full social media management',
     ],
     image: brandImg,
+    waveform: false,
   },
 ]
 
@@ -80,6 +83,22 @@ export default function Services() {
                     className="h-40 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
+                </div>
+              )}
+
+              {s.waveform && (
+                <div className="mb-6 flex h-40 items-end justify-center gap-[3px] overflow-hidden rounded-2xl border border-white/8 bg-ink/60 px-5 py-6">
+                  {Array.from({ length: 40 }).map((_, j) => (
+                    <span
+                      key={j}
+                      className="w-1.5 shrink-0 rounded-full grad-bg"
+                      style={{
+                        height: `${20 + Math.abs(Math.sin(j * 0.9)) * 70}%`,
+                        opacity: 0.55 + (j % 3) * 0.15,
+                        animation: `eq 1.${(j % 6) + 2}s ease-in-out ${j * 0.04}s infinite alternate`,
+                      }}
+                    />
+                  ))}
                 </div>
               )}
 

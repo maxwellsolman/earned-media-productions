@@ -4,8 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const stats = [
   { value: 11, suffix: '+', label: 'Brands we have shipped work for' },
-  { value: 100, suffix: 'M+', label: 'Views earned across delivered content' },
   { value: 3, suffix: ' day', label: 'Typical turnaround on a first cut' },
+  { value: 5, suffix: ' min', label: 'All it takes to send us a brief' },
   { value: 24, suffix: '/7', label: 'A team that moves on your timeline' },
 ]
 

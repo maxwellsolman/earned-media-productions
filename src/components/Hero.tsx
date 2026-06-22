@@ -43,6 +43,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-[-10%] h-[60vh] w-[80vw] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(46,197,255,0.22),transparent)] blur-2xl" />
         <div className="absolute right-[-10%] top-[20%] h-[50vh] w-[50vw] rounded-full bg-[radial-gradient(closest-side,rgba(193,46,255,0.18),transparent)] blur-2xl" />
+        <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(rgba(255,255,255,0.6)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.6)_1px,transparent_1px)] [background-size:54px_54px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_72%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(5,7,14,0.7)_85%)]" />
       </div>
 
