@@ -99,15 +99,18 @@ export default function Hero() {
             </a>
           </div>
 
-          <div data-hero="cta" className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <div data-hero="cta" className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
             {[
               ['11+', 'brands shipped'],
               ['3 day', 'avg first cut'],
               ['Full', 'service team'],
-            ].map(([n, l]) => (
-              <div key={l} className="flex items-baseline gap-2">
-                <span className="font-display text-2xl font-extrabold text-white">{n}</span>
-                <span className="text-sm text-haze">{l}</span>
+            ].map(([n, l], i) => (
+              <div key={l} className="flex items-center gap-6">
+                {i > 0 && <span className="hidden h-8 w-px bg-white/10 sm:block" />}
+                <div className="flex flex-col">
+                  <span className="font-display text-2xl font-extrabold leading-none text-white">{n}</span>
+                  <span className="mt-1 text-sm text-haze">{l}</span>
+                </div>
               </div>
             ))}
           </div>
